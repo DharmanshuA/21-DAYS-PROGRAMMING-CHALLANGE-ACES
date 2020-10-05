@@ -1,0 +1,15 @@
+Sorting using Bubble sort algorithm
+
+array=[2,8,5,3,0,9]
+n=len(array)
+
+def Bubble_sort(array,n):
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
+
+m=Bubble_sort(array,n)
+print ("Sorted array is:",array)
+
+
